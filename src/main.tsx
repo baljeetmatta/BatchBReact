@@ -6,7 +6,7 @@ import App,{Test} from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
-    <Test/>
+    {/* <Test/> */}
 
   </StrictMode>,
 )
