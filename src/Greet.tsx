@@ -42,12 +42,13 @@ type ObjectType={
 type GreetProps={
     name:string,
     years?:number,
-    data?:ObjectType
+    data?:ObjectType,
+    children:React.ReactNode
 }
 const Greet=(props:GreetProps)=>{
     return (
         <>
-        <div>Welcome to {props.name} {props.years} {props.data?.name}</div></>
+        <div>Welcome to {props.children} {props.name} {props.years} {props.data?.name}</div></>
     )
 }
 
